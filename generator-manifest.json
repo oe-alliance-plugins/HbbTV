@@ -1,0 +1,18 @@
+{
+  "branch": "main",
+  "depends_recipe": "vuplus-opera-browser-util",
+  "description_control": "",
+  "description_recipe": "HbbTV player",
+  "history_source_dir": "HbbTV",
+  "internal_package_name": "enigma2-plugin-extensions-hbbtv",
+  "module_dir_name": "HbbTV",
+  "output_subdir": "HbbTV",
+  "package_name": "enigma2-plugin-extensions-hbbtv",
+  "plugin_src_rel": "HbbTV",
+  "python_package": "HbbTV",
+  "rdepends_recipe": "vuplus-opera-browser-util",
+  "replaces": "",
+  "repo_name": "HbbTV",
+  "rrecommends": "",
+  "rreplaces": ""
+}
