@@ -349,7 +349,7 @@ class BrowserPreferenceWindow(ConfigListScreen, Screen):
 			self._startPageUrl = d['start']
 			self._keymapType = d['keymap']
 			# d['type']
-		except:
+		except Exception:
 			self._startPageUrl = 'http://www.google.com'
 		self.updateStartPageUrl()
 
@@ -611,7 +611,7 @@ class BrowserBookmarkWindow(Screen):
 				if data[0] == '#':
 					return self.mBookmarkList[idx][1]
 				idx -= 1
-		except:
+		except Exception:
 			pass
 		return None
 
@@ -620,7 +620,7 @@ class BrowserBookmarkWindow(Screen):
 			head = self["bookmarklist"].getCurrent()[0].strip()
 			if head[0] == '#':
 				return True
-		except:
+		except Exception:
 			pass
 		return False
 
@@ -1052,7 +1052,7 @@ class Browser(Screen):
 			d = BrowserSetting().getData()
 			start = d['start']
 			mode = d['type']
-		except:
+		except Exception:
 			pass
 		self._cb_start_browser(start, mode)
 

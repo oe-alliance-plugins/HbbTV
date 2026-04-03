@@ -254,7 +254,7 @@ class VBMain(Screen):
 		try:
 			from Screens.InfoBarGenerics import gHbbtvApplication
 			self.m_vuplus = gHbbtvApplication.getUseAit()
-		except:
+		except ImportError:
 			self.m_vuplus = False
 
 	def _cb_register_infobar(self):
@@ -357,7 +357,7 @@ class VBMain(Screen):
 
 				try:
 					self._applicationList = reader.getApplicationList()
-				except:
+				except Exception:
 					pass
 
 		if self._applicationList is not None:
@@ -374,9 +374,9 @@ class VBMain(Screen):
 	def stop_browser(self):
 		VBController.command('CONTROL_EXIT')
 		# try:
-		# os.system("%s/%s stop" % (vbcfg.APPROOT, vbcfg.APP_RUN))
-		# except:
-		# pass
+		# 	os.system("%s/%s stop" % (vbcfg.APPROOT, vbcfg.APP_RUN))
+		# except OSError:
+		# 	pass
 		return True
 
 	def check_browser(self):
@@ -390,7 +390,7 @@ class VBMain(Screen):
 	def restart_browser(self):
 		try:
 			os.system("%s/%s restart" % (vbcfg.APPROOT, vbcfg.APP_RUN))
-		except:
+		except OSError:
 			pass
 		return True
 
@@ -400,7 +400,7 @@ def auto_start_main(reason, **kwargs):
 		try:
 			if vbcfg.g_main.vbserver is not None:
 				vbcfg.g_main.vbserver.kill()
-		except:
+		except Exception:
 			pass
 
 

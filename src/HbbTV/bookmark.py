@@ -241,7 +241,7 @@ class BookmarkManager(SimpleConfigParser):
 		try:
 			for key in self.mBookmarkRoot[_id].mBookmarks:
 				self.delSection('b-%d' % (key,))
-		except:
+		except Exception:
 			pass
 		self.delSection('c-%d' % (_id,))
 		self._save()
