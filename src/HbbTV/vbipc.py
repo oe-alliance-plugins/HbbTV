@@ -97,7 +97,7 @@ class VBServerThread(threading.Thread):
 		hlen = struct.calcsize('ibi')
 		packet = ""
 		opcode, result, length = struct.unpack('ibi', data[:hlen])
-		#vbcfg.DEBUG("%s %s %d" % (opcode, result, length))
+		# vbcfg.DEBUG("%s %s %d" % (opcode, result, length))
 		if length > 0:
 			packet = data[hlen:hlen + length]
 		return [opcode, result, packet]

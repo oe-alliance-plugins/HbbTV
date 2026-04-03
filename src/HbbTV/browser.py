@@ -348,7 +348,7 @@ class BrowserPreferenceWindow(ConfigListScreen, Screen):
 			d = BrowserSetting().getData()
 			self._startPageUrl = d['start']
 			self._keymapType = d['keymap']
-			#d['type']
+			# d['type']
 		except:
 			self._startPageUrl = 'http://www.google.com'
 		self.updateStartPageUrl()
@@ -585,7 +585,7 @@ class BrowserBookmarkWindow(Screen):
 
 	def setBookmarkList(self):
 		l = []
-		#self.mBookmarkManager.dump()
+		# self.mBookmarkManager.dump()
 		cd = self.mBookmarkManager.getBookmarkRoot()
 		for ck in cd:
 			l.append(('# ' + cd[ck].mName, cd[ck]))
@@ -1047,7 +1047,7 @@ class Browser(Screen):
 			self.session.open(MessageBox, message, MessageBox.TYPE_INFO)
 			return
 		mode = 0
-		#startpage = 'http://www.google.com'
+		# startpage = 'http://www.google.com'
 		try:
 			d = BrowserSetting().getData()
 			start = d['start']

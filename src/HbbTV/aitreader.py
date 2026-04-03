@@ -55,7 +55,7 @@ class eAITSectionReader:
 			item["orgid"] = int(self.__item(application, "orgid"))
 			item["appid"] = int(self.__item(application, "appid"))
 			item["profile"] = int(self.__item(application, "profile"))
-		#print item
+		# print item
 		return item
 
 	def doParseApplications(self):
@@ -94,7 +94,7 @@ class eAITSectionReader:
 		if not six.PY3:
 			document = document.decode("cp1252").encode("utf-8")
 		document = "<URL>" + document + "</URL>"
-		#print document
+		# print document
 		try:
 			self.mDocument = xml.dom.minidom.parseString(document)
 		except Exception as ErrMsg:
@@ -117,8 +117,8 @@ def unit_test(demux, pmtid, sid):
 	reader = eAITSectionReader(demux, pmtid, sid)
 	if reader.doOpen(None, None):
 		reader.doParseApplications()
-		#reader.doDump()
+		# reader.doDump()
 	else:
 		vbcfg.ERR("no data!!")
 
-#unit_test('0', 0x17d4, 0x2b66)
+# unit_test('0', 0x17d4, 0x2b66)
