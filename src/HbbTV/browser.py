@@ -10,7 +10,6 @@ from Components.ConfigList import ConfigListScreen
 from Components.Label import Label, MultiColorLabel
 from Components.Language import language
 from Components.MenuList import MenuList
-from Components.Pixmap import Pixmap
 from Components.Sources.Boolean import Boolean
 from Components.Sources.StaticText import StaticText
 from Components.config import ConfigText, ConfigSelection, ConfigSlider, getConfigListEntry
@@ -19,7 +18,6 @@ from .__init__ import _
 from .bookmark import BookmarkManager, BookmarkData, CategoryData
 from .vbipc import VBController
 from . import vbcfg
-import six
 
 strIsEmpty = lambda x: x is None or len(x) == 0
 
@@ -967,7 +965,7 @@ class Browser(Screen):
 		vbcfg.LOG("open url: %s %d" % (data, mode))
 		if strIsEmpty(data):
 			return
-		elif six.PY3:
+		else:
 			data = bytes(data, 'utf-8')
 
 		try:
