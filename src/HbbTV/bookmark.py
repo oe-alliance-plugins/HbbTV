@@ -133,9 +133,9 @@ class BookmarkManager(SimpleConfigParser):
 
 		import os
 		if not os.path.exists(_dbFileName):
-			f = open('/proc/stb/info/vumodel')
-			model = f.read().strip()
-			f.close()
+			# f = open('/proc/stb/info/vumodel')
+			# model = f.read().strip()
+			# f.close()
 			# manualmode = (model == "solo2" or model == "duo2" or model == "solose" or model == "zero")
 			manualmode = False
 
