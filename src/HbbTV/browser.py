@@ -19,7 +19,9 @@ from .bookmark import BookmarkManager, BookmarkData, CategoryData
 from .vbipc import VBController
 from . import vbcfg
 
-strIsEmpty = lambda x: x is None or len(x) == 0
+
+def strIsEmpty(x):
+	return x is None or len(x) == 0
 
 
 class BrowserSetting:
