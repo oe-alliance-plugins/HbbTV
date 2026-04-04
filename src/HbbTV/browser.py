@@ -334,12 +334,12 @@ class BrowserPreferenceWindow(ConfigListScreen, Screen):
 		return types
 
 	def makeMenuEntry(self):
-		l = []
-		l.append(("startpage", _("Start Page")))
+		items = []
+		items.append(("startpage", _("Start Page")))
 		if not strIsEmpty(self._currentPageUrl):
-			l.append(("current", _("Current Page")))
-		l.append(("direct", _("Direct Input")))
-		self.menuItemStartpage = ConfigSelection(default="startpage", choices=l)
+			items.append(("current", _("Current Page")))
+		items.append(("direct", _("Direct Input")))
+		self.menuItemStartpage = ConfigSelection(default="startpage", choices=items)
 		self.menuEntryStartpage = getConfigListEntry(_("Startpage"), self.menuItemStartpage)
 
 		kl = self.getKeymapTypeList()
@@ -584,15 +584,15 @@ class BrowserBookmarkWindow(Screen):
 		self.setTitle(_('Bookmark'))
 
 	def setBookmarkList(self):
-		l = []
+		items = []
 		# self.mBookmarkManager.dump()
 		cd = self.mBookmarkManager.getBookmarkRoot()
 		for ck in cd:
-			l.append(('# ' + cd[ck].mName, cd[ck]))
+			items.append(('# ' + cd[ck].mName, cd[ck]))
 			bd = cd[ck].mBookmarks
 			for bk in bd:
-				l.append(('    - ' + bd[bk].mTitle, bd[bk]))
-		return l
+				items.append(('    - ' + bd[bk].mTitle, bd[bk]))
+		return items
 
 	def updateBookmarkList(self):
 		self.mBookmarkList = self.setBookmarkList()
@@ -668,10 +668,10 @@ class BrowserBookmarkWindow(Screen):
 				c = CategoryData(0, '')
 				self.mSession.openWithCallback(self.cbEditWindow, BookmarkEditWindow, _('Add'), BookmarkEditWindow.CATEGORY, c, self.mBookmarkManager)
 		if strIsEmpty(self.mUrl):
-			l = [(_('Direct Input(Bookmark)'), 2,), (_('Direct Input(Category)'), 3,)]
+			items = [(_('Direct Input(Bookmark)'), 2,), (_('Direct Input(Category)'), 3,)]
 		else:
-			l = [(_('Currentpage(Bookmark)'), 1,), (_('Direct Input(Bookmark)'), 2,), (_('Direct Input(Category)'), 3,)]
-		self.mSession.openWithCallback(cbGreen, ChoiceBox, title=_("Please choose."), list=l)
+			items = [(_('Currentpage(Bookmark)'), 1,), (_('Direct Input(Bookmark)'), 2,), (_('Direct Input(Category)'), 3,)]
+		self.mSession.openWithCallback(cbGreen, ChoiceBox, title=_("Please choose."), list=items)
 
 	def keyYellow(self):
 		data = self["bookmarklist"].getCurrent()[1]
@@ -1105,10 +1105,10 @@ class Browser(Screen):
 			vbcfg.ERR(ErrMsg)
 
 	def get_menulist_items(self, idx=0):
-		l = self.MENULIST_ITEMS[idx]
+		menu_items = self.MENULIST_ITEMS[idx]
 		if self.is_browser_opened and idx == 0:
-			l = [(_("Return"), None)]
-		return l
+			menu_items = [(_("Return"), None)]
+		return menu_items
 
 	def set_menu_item(self):
 		self["menuitemFile"].setForegroundColorNum(0)
