@@ -1,18 +1,17 @@
 # -*- coding: utf-8 -*-
-from __future__ import print_function, absolute_import
+from __future__ import absolute_import
 import os
 import xml.dom.minidom
 import re
-import six
 from enigma import iServiceInformation
 from . import vbcfg
 
 RE_XML_ILLEGAL = u'([\u0000-\u0008\u000b-\u000c\u000e-\u001f\ufffe-\uffff])' + \
                  u'|' + \
                  u'([%s-%s][^%s-%s])|([^%s-%s][%s-%s])|([%s-%s]$)|(^[%s-%s])' % \
-                  (six.unichr(0xd800), six.unichr(0xdbff), six.unichr(0xdc00), six.unichr(0xdfff),
-                   six.unichr(0xd800), six.unichr(0xdbff), six.unichr(0xdc00), six.unichr(0xdfff),
-                   six.unichr(0xd800), six.unichr(0xdbff), six.unichr(0xdc00), six.unichr(0xdfff))
+                  (chr(0xd800), chr(0xdbff), chr(0xdc00), chr(0xdfff),
+                   chr(0xd800), chr(0xdbff), chr(0xdc00), chr(0xdfff),
+                   chr(0xd800), chr(0xdbff), chr(0xdc00), chr(0xdfff))
 
 
 DUMPBIN = vbcfg.PLUGINROOT + "/dumpait"
@@ -91,8 +90,7 @@ class eAITSectionReader:
 		document = re.sub(RE_XML_ILLEGAL, "?", document)
 		document = re.sub("&", "+", document)
 		document = re.sub("%", " ", document)
-		if not six.PY3:
-			document = document.decode("cp1252").encode("utf-8")
+		document = document.decode("cp1252").encode("utf-8")
 		document = "<URL>" + document + "</URL>"
 		# print document
 		try:

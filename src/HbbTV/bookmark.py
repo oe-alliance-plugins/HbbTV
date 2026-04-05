@@ -1,6 +1,5 @@
-from __future__ import print_function, absolute_import
-import six
-from six.moves import configparser
+from __future__ import absolute_import
+import configparser
 from . import vbcfg
 from io import open
 
@@ -54,12 +53,8 @@ class SimpleConfigParser:
 		self.mDataValid = True
 
 	def _save(self):
-		if six.PY3:
-			with open(self.mFileName, 'w', encoding='utf-8') as bookmarkFile:
-				self.mConfig.write(bookmarkFile)
-		else:
-			with open(self.mFileName, 'wb') as bookmarkFile:
-				self.mConfig.write(bookmarkFile)
+		with open(self.mFileName, 'w', encoding='utf-8') as bookmarkFile:
+			self.mConfig.write(bookmarkFile)
 		self.mDataValid = False
 		self.mPopulateValid = False
 
