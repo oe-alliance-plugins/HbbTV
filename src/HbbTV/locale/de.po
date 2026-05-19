@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2-oe-alliance-plugins 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-16 19:01+0430\n"
+"POT-Creation-Date: 2026-04-08 10:12+0200\n"
 "PO-Revision-Date: 2018-10-14 14:22+0200\n"
 "Last-Translator: Manfred Aabye <openmanniland@gmx.de>\n"
 "Language-Team: AndyBlacburn,Trial\n"
@@ -18,9 +18,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 2.2\n"
 
+#: ../browser.py:160
 msgid " "
 msgstr " "
 
+#: ../browser.py:444
 msgid ""
 "!!(Empty)\n"
 "Please, Input to the"
@@ -28,42 +30,56 @@ msgstr ""
 "!!(leer)\n"
 "Bitte eingeben"
 
+#: ../youtube.py:56
 msgid "* RC Help"
 msgstr "* RC Hilfe"
 
+#: ../youtube.py:55
 msgid "* Start YouTube TV"
 msgstr "* Start YouTube TV"
 
+#: ../browser.py:938 ../browser.py:948
 msgid "About"
 msgstr "Über"
 
+#: ../browser.py:468 ../browser.py:479 ../browser.py:575 ../browser.py:668
+#: ../browser.py:671
 msgid "Add"
 msgstr "Hinzufügen"
 
+#: ../youtube.py:81
 msgid "Back"
 msgstr "Hinten"
 
+#: ../browser.py:783
 msgid "Backspace Key"
 msgstr "Löschen Taste"
 
+#: ../browser.py:430 ../browser.py:586 ../browser.py:937 ../browser.py:945
 msgid "Bookmark"
 msgstr "Lesezeichen"
 
+#: ../browser.py:484 ../browser.py:492
 msgid "Bookmark Title"
 msgstr "Lesezeichen Titel"
 
+#: ../browser.py:487 ../browser.py:495
 msgid "Bookmark URL"
 msgstr "Lesezeichen URL"
 
+#: ../browser.py:765
 msgid "Browser Help"
 msgstr "Browser Hilfe"
 
+#: ../plugin.py:448
 msgid "Browser Start/Stop"
 msgstr "Browser Start/Stop"
 
+#: ../browser.py:923 ../browser.py:1027
 msgid "BrowserMain"
 msgstr "BrowserStartseite"
 
+#: ../browser.py:708
 msgid ""
 "Can't open selected bookmark.\n"
 "   - URL data is empty!!"
@@ -71,78 +87,103 @@ msgstr ""
 "Kann Lesezeichen URL nicht öffnen.\n"
 " - URL ist leer!!"
 
+#: ../browser.py:158 ../browser.py:273 ../browser.py:415 ../youtube.py:135
 msgid "Cancel"
 msgstr "Abbruch"
 
+#: ../browser.py:471 ../browser.py:475
 msgid "Category Name"
 msgstr "Kategoriename"
 
+#: ../browser.py:342
 msgid "Current Page"
 msgstr "Aktuelle Seite"
 
+#: ../browser.py:660
 msgid "Current page is already exist."
 msgstr "Aktuelle Seite bereits vorhanden."
 
+#: ../browser.py:675
 msgid "Currentpage(Bookmark)"
 msgstr "Aktuelle Seite(Lesezeichen)"
 
+#: ../browser.py:577
 msgid "Delete"
 msgstr "Löschen"
 
+#: ../browser.py:343
 msgid "Direct Input"
 msgstr "Direkteingabe"
 
+#: ../browser.py:673 ../browser.py:675
 msgid "Direct Input(Bookmark)"
 msgstr "Direkteingabe (Lesezeichen)"
 
+#: ../browser.py:673 ../browser.py:675
 msgid "Direct Input(Category)"
 msgstr "Direkteingabe (Kategorie)"
 
+#: ../youtube.py:168
 msgid "Do not show YouTube TV Starter again"
 msgstr "Zeige YouTube TV Starter nicht mehr"
 
+#: ../browser.py:698
 msgid "Do you want to delete the bookmark?"
 msgstr "Soll dieses Lesezeichen gelöscht werden?"
 
+#: ../browser.py:696
 msgid "Do you want to delete the category and the bookmarks?"
 msgstr "Soll die Kategory und die Lesezeichen gelöscht werden?"
 
+#: ../browser.py:645
 msgid "Do you want to set selected url to the Startpage?"
 msgstr "Soll die gewählte URL als Startseite genutzt werden?"
 
+#: ../browser.py:807
 msgid "Down Key"
 msgstr "Runter Taste"
 
+#: ../browser.py:576 ../browser.py:681 ../browser.py:683
 msgid "Edit"
 msgstr "Bearbeiten"
 
+#: ../browser.py:781 ../browser.py:812
 msgid "Enter Key"
 msgstr "Enter Taste"
 
+#: ../browser.py:574 ../browser.py:744 ../browser.py:936 ../browser.py:944
 msgid "Exit"
 msgstr "Ausgang"
 
+#: ../browser.py:775
 msgid "Exit the Browser."
 msgstr "Den Browser verlassen."
 
+#: ../youtube.py:62
 msgid "Exit the YouTube TV"
 msgstr "YouTube TV beenden"
 
+#: ../browser.py:915
 msgid "File"
 msgstr "Datei"
 
+#: ../browser.py:745
 msgid "Global"
 msgstr "Global"
 
+#: ../browser.py:818
 msgid "Go to next page."
 msgstr "Gehe zur nächsten Seite."
 
+#: ../browser.py:817
 msgid "Go to previous page."
 msgstr "Gehe zur vorherigen Seite."
 
+#: ../plugin.py:449
 msgid "HbbTV Applications"
 msgstr "HbbTV Anwendungen"
 
+#: ../plugin.py:268
 msgid ""
 "HbbTV Browser was not running.\n"
 "Please running browser before start HbbTV Application."
@@ -150,15 +191,19 @@ msgstr ""
 "HbbTV Browser läuft nicht.\n"
 "Bitte Browser starten bevor eine HbbTV Anwendung gewählt wird."
 
+#: ../hbbtv.py:54
 msgid "HbbTV Plugin"
 msgstr "HbbTV Plugin"
 
+#: ../browser.py:917 ../browser.py:938 ../browser.py:949 ../youtube.py:44
 msgid "Help"
 msgstr "Hilfe"
 
+#: ../browser.py:444
 msgid "Invalid "
 msgstr "Ungültig "
 
+#: ../browser.py:299
 msgid ""
 "Invalid URL!!(Empty)\n"
 "Please, Input to the URL."
@@ -166,60 +211,79 @@ msgstr ""
 "Ungültige URL (leer)\n"
 "Bitte URL eingeben."
 
+#: ../browser.py:635
 msgid "Invalid URL. Please check again!!"
 msgstr "Ungültige URL. Bitte überprüfen!!"
 
+#: ../browser.py:792
 msgid "It will move the mouse pointer down."
 msgstr "Wird den Mauszeiger nach unten bewegen."
 
+#: ../browser.py:793
 msgid "It will move the mouse pointer left."
 msgstr "Wird den Mauszeiger nach links bewegen."
 
+#: ../browser.py:794
 msgid "It will move the mouse pointer right."
 msgstr "Wird den Mauszeiger nach rechts bewegen."
 
+#: ../browser.py:791
 msgid "It will move the mouse pointer up."
 msgstr "Wird den Mauszeiger nach oben bewegen."
 
+#: ../browser.py:747
 msgid "Keyboard"
 msgstr "Tastatur"
 
+#: ../browser.py:361
 msgid "Keyboard Layout"
 msgstr "Tastaturlayout"
 
+#: ../browser.py:801 ../browser.py:808
 msgid "Left Key"
 msgstr "Links Taste"
 
+#: ../browser.py:797
 msgid "Left Mouse Button"
 msgstr "Linke Maus Taste"
 
+#: ../browser.py:746
 msgid "Mouse"
 msgstr "Maus"
 
+#: ../youtube.py:66
 msgid "Move down"
 msgstr "Hinunter schieben"
 
+#: ../youtube.py:67
 msgid "Move left"
 msgstr "Schritt links"
 
+#: ../youtube.py:68
 msgid "Move right"
 msgstr "Schritt Rechts"
 
+#: ../youtube.py:65
 msgid "Move up"
 msgstr "Herauf schieben"
 
+#: ../browser.py:435 ../browser.py:521
 msgid "Name"
 msgstr "Name"
 
+#: ../plugin.py:323
 msgid "No detected HbbTV applications."
 msgstr "Keine HbbTV Anwendungen gefunden."
 
+#: ../browser.py:936 ../browser.py:941
 msgid "Open Startpage"
 msgstr "Öffne Startseite"
 
+#: ../browser.py:936 ../browser.py:942
 msgid "Open URL"
 msgstr "Öffne URL"
 
+#: ../browser.py:1040 ../browser.py:1048 ../browser.py:1063
 msgid ""
 "Opera Browser was not running.\n"
 "Please running browser using [File]>[Start/Stop] menu."
@@ -227,134 +291,178 @@ msgstr ""
 "Opera Browser läuft nicht.\n"
 "Bitte Opera mit [Date i]>[Start/Stop] starten."
 
+#: ../plugin.py:450
 msgid "Opera Web Browser"
 msgstr "Opera Web Browser"
 
+#: ../browser.py:922 ../browser.py:1095
 msgid "Opera Web Browser Plugin v2.0"
 msgstr "Opera Web Browser Plugin v 2.0"
 
+#: ../browser.py:816
 msgid "PageDown Key"
 msgstr "Seite Runter Taste"
 
+#: ../browser.py:815
 msgid "PageUp Key"
 msgstr "Seite Hoch Taste"
 
+#: ../youtube.py:77
 msgid "Pause current video"
 msgstr "Pause Aktuelles Video"
 
+#: ../youtube.py:76
 msgid "Play current video"
 msgstr "Aktuelles Video abspielen"
 
+#: ../youtube.py:61
 msgid "Play ther selected the video"
 msgstr "Play ther wählte das Video"
 
+#: ../plugin.py:324
 msgid "Please choose an HbbTV application."
 msgstr "Bitte eine HbbTV Anwendung wählen."
 
+#: ../plugin.py:300
 msgid "Please choose one."
 msgstr "Bitte eine auswählen."
 
+#: ../browser.py:676
 msgid "Please choose."
 msgstr "Bitte wählen."
 
+#: ../browser.py:318 ../browser.py:1066
 msgid "Please enter URL here"
 msgstr "Bitte URL hier eingeben"
 
+#: ../browser.py:937 ../browser.py:947
 msgid "Position Setup"
 msgstr "Positions Aufbau"
 
+#: ../browser.py:286 ../browser.py:937 ../browser.py:946
 msgid "Preference"
 msgstr "Voreinstellung"
 
+#: ../browser.py:235
 msgid "Really close without saving settings?"
 msgstr "Wirklich schließen, ohne Einstellungen zu speichern?"
 
+#: ../browser.py:950 ../browser.py:1112
 msgid "Return"
 msgstr "Zurück"
 
+#: ../browser.py:802 ../browser.py:809
 msgid "Right Key"
 msgstr "Rechts Taste"
 
+#: ../browser.py:800
 msgid "Right Mouse Button"
 msgstr "Rechte Maus Taste"
 
+#: ../browser.py:159 ../browser.py:274 ../browser.py:416 ../youtube.py:136
 msgid "Save"
 msgstr "Speichern"
 
+#: ../youtube.py:71
 msgid "Search a video"
 msgstr "Video Suche"
 
+#: ../browser.py:578
 msgid "Set as Startpage"
 msgstr "Als Startseite benutzen"
 
+#: ../browser.py:778
 msgid "Show the Menu window."
 msgstr "Menüfenster zeigen."
 
+#: ../browser.py:782
 msgid "Show the Virtual keyboard window."
 msgstr "Virtuelle Tastatur zeigen."
 
+#: ../youtube.py:73
 msgid "Skip backward 10 sec"
 msgstr "Rückwärts 10 sec Springen"
 
+#: ../youtube.py:72
 msgid "Skip forward 10 sec"
 msgstr "Springe 10 sec vorwärts"
 
+#: ../plugin.py:299 ../youtube.py:43
 msgid "Start"
 msgstr "Start"
 
+#: ../browser.py:340
 msgid "Start Page"
 msgstr "Startseite"
 
+#: ../youtube.py:53
 msgid "Start YouTube TV"
 msgstr "Start YouTube TV"
 
+#: ../browser.py:936 ../browser.py:943
 msgid "Start/Stop"
 msgstr "Start/Stopp"
 
+#: ../browser.py:345
 msgid "Startpage"
 msgstr "Startseite"
 
+#: ../plugin.py:297
 msgid "Stop"
 msgstr "Stopp"
 
+#: ../youtube.py:78
 msgid "Stop current video"
 msgstr "Aktuelles Video stoppen"
 
+#: ../browser.py:786
 msgid "Switch to keyboard/mouse mode."
 msgstr "In den Tastatur/Maus Modus schalten."
 
+#: ../browser.py:438 ../browser.py:528
 msgid "Title"
 msgstr "Titel"
 
+#: ../browser.py:916
 msgid "Tools"
 msgstr "Werkzeuge"
 
+#: ../browser.py:806
 msgid "Up Key"
 msgstr "Hoch Taste"
 
+#: ../browser.py:440 ../browser.py:529
 msgid "Url"
 msgstr "URL"
 
+#: ../youtube.py:142
 msgid "YouTube TV Settings"
 msgstr "YouTube TV Einstellungen"
 
+#: ../youtube.py:167
 msgid "YouTube TV URL"
 msgstr "YouTube TV URL"
 
+#: ../youtube.py:54
 msgid "YouTube TV is a new way to watch YouTube videos"
 msgstr "YouTube TV ist eine neue Möglichkeit YouTube Videos anzuschauen"
 
+#: ../browser.py:183
 msgid "height"
 msgstr "Höhe"
 
+#: ../browser.py:180
 msgid "left"
 msgstr "links"
 
+#: ../plugin.py:450
 msgid "start opera web browser"
 msgstr "Opera starten"
 
+#: ../browser.py:182
 msgid "top"
 msgstr "Oben"
 
+#: ../browser.py:181
 msgid "width"
 msgstr "Breite"
